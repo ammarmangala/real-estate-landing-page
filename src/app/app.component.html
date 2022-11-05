@@ -1,35 +1,78 @@
+Skip to content Search or jump to… Pull requests Issues Marketplace Explore
+@ammarmangala bekamais / landing-page-scroll-animations Public Code Issues Pull
+requests 21 Actions Projects Security Insights
+landing-page-scroll-animations/src/app/app.component.html Beka Maisuradze
+initial commit Latest commit dd25a84 on 29 Jun 2020 History 0 contributors 83
+lines (82 sloc) 2.37 KB
+
 <div class="main">
   <header class="header">
-    <ul class="menu">
-      <li class="menu__item"><a href="" class="menu__links">Home</a></li>
-      <li class="menu__item"><a href="" class="menu__links">About us </a></li>
+    <ul class="menu" #menu>
       <li class="menu__item">
-        <a href="" class="menu__links">How it works</a>
+        <a class="menu__link">Home</a>
       </li>
-      <li class="menu__item"><a href="" class="menu__links">Benefits </a></li>
       <li class="menu__item">
-        <a href="" class="menu__links">Testimonials </a>
+        <a class="menu__link">About Us</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link">How it Works</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link">Benefits</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link">Testimonials</a>
       </li>
     </ul>
-    <ul class="menu menu-right">
-      <li class="menu__item"><a href="" class="menu__links">Blog</a></li>
-      <li class="menu__item"><a href="" class="menu__links">FAQ </a></li>
+    <ul class="menu menu-right" #menuSecond>
+      <li class="menu__item">
+        <a class="menu__link">Blog</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link">FAQ</a>
+      </li>
     </ul>
   </header>
   <section class="first-section">
     <div class="info">
-      <h1 class="heading-1">Real estate advice for real locals</h1>
+      <h1 class="heading-1">Real estate advice for real locals.</h1>
       <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        nobis consequatur aut tenetur doloribus, quisquam reprehenderit
-        quibusdam sed explicabo officiis facilis ipsam voluptate, veniam, id
-        saepe eius minima temporibus exercitationem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci
+        deserunt eaque.
       </p>
-      <a href="" class="btn btn--start"></a>
+      <a class="btn btn--start">Get Started</a>
     </div>
     <div class="visuals">
       <div class="image-container">
-        <img src="" alt="">
+        <img #imageFirst src="../assets/building-1.jpg" alt="" />
+      </div>
+      <div class="image-container">
+        <img #imageSecond src="../assets/building-2.jpg" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="second-section" #secondSection>
+    <div class="box"></div>
+    <h4 class="heading-4" id="about">About Us</h4>
+    <h1 class="heading-1" id="buy">
+      Buying a home doesn't have to be a mystery.
+    </h1>
+    <div class="info-1">
+      <div class="info-1__text">
+        <span class="quote"> " </span>
+        <h2 class="heading-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum labore
+          tempora eveniet adipisci sunt harum, eos nobis asperiores cumque
+          veniam fuga fugit eius ab reiciendis, culpa id recusandae illum
+          quisquam!
+        </p>
+        <a class="btn--learn">Learn More</a>
+      </div>
+      <div class="info-1__visual">
+        <img src="../assets/photo-1593016605825-8cfb409ca3b1.jpeg" alt="" />
       </div>
     </div>
   </section>
