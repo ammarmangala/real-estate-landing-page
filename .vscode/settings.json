@@ -1,5 +1,7 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "dev"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/c3094a12-fff7-4c13-9cb2-ec4c665eaf70/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/ammar-test-angular",
+    "appService.deploySubpath": "."
 }
